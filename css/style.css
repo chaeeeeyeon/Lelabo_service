@@ -1,0 +1,663 @@
+@font-face {
+    font-family: 'bell';
+    src: url('../font/bellgothicstd-black-webfont.woff');
+}
+
+@font-face {
+    font-family: 'sang';
+    src: url('../font/SangSangClover_Regular.woff');
+}
+
+@font-face {
+    font-family: 'noto';
+    src: url('../font/NotoSans-Regular.woff');
+}
+@keyframes soft {
+    from {
+        margin-left: 100%;
+    }
+
+    to {
+        margin-left: 0%;
+    }
+}
+* {
+    padding: 0;
+    margin: 0;
+    transition: all 0.5s;
+}
+
+img {
+    display: block;
+    max-width: 100%;
+}
+
+a {
+    color: inherit;
+    text-decoration: none;
+}
+
+li {
+    list-style: none;
+}
+
+html {
+    background-color: #f2f2f2;
+    scroll-behavior: smooth;
+}
+
+body {
+    -ms-overflow-style: none;
+}
+
+::-webkit-scrollbar {
+    display: none;
+}
+
+header {
+    width: 100%;
+    height: 16vh;
+}
+
+header .inner {
+    width: 85%;
+    height: 100%;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+header .inner .logo{
+    width: 300px;
+}
+
+header .inner h1 {
+    font-size: 0;
+}
+
+.submenu {
+    background-color: darkgoldenrod;
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    background-color: #f2f2f2;
+    z-index: 9999;
+    display: none;
+    animation: soft 1s ease-out;
+    color: #333333;
+}
+
+.submenu .close {
+    position: absolute;
+    top: 5%;
+    left: 90%;
+}
+
+.submenu ul {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 50%;
+    height: 60%;
+    font-family: 'bell';
+    font-size: 3rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+.first{
+    width: 85%;
+    margin: 10% auto;
+}
+.two {
+    width: 100%;
+    margin: 20% auto;
+}
+
+.two h2 {
+    font-family: 'bell';
+    font-size: 5rem;
+    margin-bottom: 10%;
+    text-align: center;
+    color: #333333;
+}
+
+.two .inner {
+    background-image: url('../img/lelabo_service_bg.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    display: flex;
+    justify-content: space-evenly;
+    padding: 3%;
+}
+
+.two .inner .left {
+    font-family: 'sang';
+    text-align: center;
+    color: white;
+    width: 50%;
+    margin-right: 3%;
+}
+
+.two .inner .left h4 {
+    font-size: 2.5rem;
+    margin: 5% 0;
+}
+
+.two .inner .left .contact {
+    font-size: 1.7rem;
+    text-align: left;
+    letter-spacing: 0.1rem;
+    line-height: 2rem;
+    margin-bottom: 5%;
+}
+
+.two .inner .left .list .form-row {
+    margin-bottom: 6%;
+    text-align: left;
+    border-bottom: 1px solid #ffffff;
+    font-size: 1.6rem;
+}
+
+.two .inner .left .list .form-row select {
+    background-color: transparent;
+    border: none;
+    color: #333333;
+    font-family: 'sang';
+    outline: none;
+    width: 100%;
+    height: 100%;
+    resize: none;
+    font-size: 1.4rem;
+    margin-top: 3%;
+}
+
+.two .inner .left .list .form-row input {
+    background-color: transparent;
+    border: none;
+    color: #333333;
+    width: 100%;
+    height: 100%;
+    font-family: 'sang';
+    outline: none;
+    font-size: 1.4rem;
+    margin-top: 3%;
+    resize: none;
+}
+
+.two .inner .left .list .form-row textarea {
+    background-color: transparent;
+    color: #333333;
+    font-family: 'sang';
+    outline: none;
+    resize: none;
+    border: none;
+    font-size: 1.4rem;
+}
+
+.two .inner .left .list .agree {
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 6%;
+}
+
+.two .inner .left .list .agree input {
+    width: 18px;
+}
+
+.two .inner .left .list .agree p {
+    text-align: left;
+    font-size: 1.5rem;
+    line-height: 2rem;
+    width: 80%;
+}
+
+.two .inner .left .list .form-send input {
+    background-color: #8B7955;
+    color: white;
+    border: none;
+    cursor: pointer;
+    width: 4vw;
+    height: 2vw;
+    font-family: 'sang';
+    margin-bottom: 6%;
+    font-size: 1.5rem;
+}
+
+.two .inner .right {
+    background-image: url(../img/lelabo_service_journal.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 50%;
+}
+footer {
+    width: 100%;
+    height: 80vh;
+    border-top: 3px solid #9c9c9c;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+footer .inner {
+    width: 80vw;
+}
+
+footer .inner .top {
+    display: flex;
+    justify-content: space-between;
+}
+
+footer .inner .top .text ul {
+    font-family: 'sang';
+    font-size: 1.8rem;
+    letter-spacing: 0.2rem;
+    line-height: 3.5rem;
+}
+
+footer .inner .top .text ul li:nth-child(1) {
+    font-weight: bold;
+}
+
+footer .inner .bottom {
+    display: flex;
+    justify-content: space-between;
+    margin: 5% 0;
+    font-family: 'sang';
+    letter-spacing: 0.2rem;
+    line-height: 2.5rem;
+    font-size: 1.8rem;
+}
+
+footer .inner .bottom figure {
+    display: flex;
+    align-items: flex-end;
+    cursor: pointer;
+}
+@media screen and (min-width:1024px) and (max-width:1200px) {
+    header .inner{
+        width: 90%;
+    }
+    header .inner .logo{
+        width: 90%;
+    }
+    header .inner .menu{
+        width: 40px;
+    }
+    .submenu .close{
+        left: 90%;
+        width: 60px;
+    }
+    .submenu ul{
+        font-size: 2.9rem;
+    }
+    .two h2 {
+        font-size: 4rem;
+    }
+
+    .two .inner .left h4 {
+        font-size: 2rem;
+    }
+
+    .two .inner .left .contact {
+        font-size: 1.5rem;
+    }
+
+    .two .inner .left .list .form-row {
+        font-size: 1.3rem;
+    }
+
+    .two .inner .left .list .form-row select {
+        font-size: 1.2rem;
+    }
+
+    .two .inner .left .list .form-row input {
+        font-size: 1.2rem;
+    }
+
+    .two .inner .left .list .form-row textarea {
+        font-size: 1.2rem;
+    }
+
+    .two .inner .left .list .agree input {
+        width: 15px;
+    }
+
+    .two .inner .left .list .agree p {
+        font-size: 1.2rem;
+    }
+
+    .two .inner .left .list .form-send input {
+        font-size: 1.2rem;
+        width: 5vw;
+        height: 3vw;
+    }
+
+    footer .inner .top .text ul {
+        font-size: 1.3rem;
+    }
+
+    footer .inner .bottom p {
+        font-size: 1.3rem;
+    }
+}
+@media screen and (min-width:767px) and (max-width:1023px) {
+    header .inner{
+        width: 90%;
+    }
+    header .inner .logo{
+        width: 80%;
+    }
+    header .inner .menu{
+        width: 40px;
+    }
+    .submenu .close{
+        left: 85%;
+        width: 60px;
+    }
+    .submenu ul{
+        font-size: 2.8rem;
+    }
+    .two h2 {
+        font-size: 3rem;
+    }
+
+    .two .inner .left {
+        width: 90%;
+    }
+
+    .two .inner .left h4 {
+        font-size: 1.7rem;
+    }
+
+    .two .inner .right {
+        display: none;
+    }
+
+    .two .inner .left .contact {
+        font-size: 1.3rem;
+    }
+
+    .two .inner .left .list .form-row select {
+        font-size: 1.1rem;
+    }
+
+    .two .inner .left .list .form-row input {
+        font-size: 1.1rem;
+    }
+
+    .two .inner .left .list .form-row textarea {
+        font-size: 1.1rem;
+    }
+
+    .two .inner .left .list .agree input {
+        width: 13px;
+    }
+
+    .two .inner .left .list .agree p {
+        font-size: 1.1rem;
+    }
+
+    .two .inner .left .list .form-send input {
+        font-size: 1.2rem;
+        width: 6vw;
+        height: 4vw;
+    }
+
+    footer {
+        height: 50vh;
+    }
+
+    footer .inner .top {
+        display: none;
+    }
+
+    footer .inner .bottom p {
+        font-size: 1.2rem;
+    }
+}
+@media screen and (min-width:540px) and (max-width:766px) {
+    header .inner{
+        width: 90%;
+    }
+    header .inner .logo{
+        width: 80%;
+    }
+    header .inner .menu{
+        width: 35px;
+    }
+    .submenu .close{
+        left: 85%;
+        width: 55px;
+    }
+    .submenu ul{
+        font-size: 2.7rem;
+    }
+    .two h2 {
+        font-size: 2.4rem;
+    }
+
+    .two .inner .left {
+        width: 80%;
+    }
+
+    .two .inner .left h4 {
+        font-size: 1.7rem;
+    }
+
+    .two .inner .right {
+        display: none;
+    }
+
+    .two .inner .left .contact {
+        font-size: 1.2rem;
+    }
+
+    .two .inner .left .list .form-row {
+        font-size: 1.1rem;
+    }
+
+    .two .inner .left .list .form-row select {
+        font-size: 1rem;
+    }
+
+    .two .inner .left .list .form-row input {
+        font-size: 1rem;
+    }
+
+    .two .inner .left .list .form-row textarea {
+        font-size: 1rem;
+    }
+
+    .two .inner .left .list .agree input {
+        width: 15px;
+    }
+
+    .two .inner .left .list .agree p {
+        font-size: 1rem;
+        width: 80%;
+    }
+
+    .two .inner .left .list .form-send input {
+        font-size: 1.1rem;
+        width: 8vw;
+        height: 6vw;
+    }
+
+    footer {
+        height: 50vh;
+    }
+
+    footer .inner .top {
+        display: none;
+    }
+
+    footer .inner .bottom p {
+        font-size: 1rem;
+    }
+}
+@media screen and (max-width:539px) {
+    header .inner{
+        width: 90%;
+    }
+    header .inner .logo{
+        width: 70%;
+    }
+    header .inner .menu{
+        width: 30px;
+    }
+    .submenu .close{
+        left: 80%;
+        width: 50px;
+    }
+    .submenu ul{
+        font-size: 2.5rem;
+    }
+    .two h2 {
+        font-size: 2.2rem;
+    }
+
+    .two .inner .left {
+        width: 90%;
+    }
+
+    .two .inner .left h4 {
+        font-size: 1.6rem;
+    }
+
+    .two .inner .right {
+        display: none;
+    }
+
+    .two .inner .left .contact {
+        font-size: 1.1rem;
+    }
+
+    .two .inner .left .list .form-row {
+        font-size: 1rem;
+    }
+
+    .two .inner .left .list .form-row select {
+        font-size: 0.9rem;
+    }
+
+    .two .inner .left .list .form-row input {
+        font-size: 0.9rem;
+    }
+
+    .two .inner .left .list .form-row textarea {
+        font-size: 0.9rem;
+    }
+
+    .two .inner .left .list .agree input {
+        width: 15px;
+    }
+
+    .two .inner .left .list .agree p {
+        font-size: 0.9rem;
+        width: 80%;
+    }
+
+    .two .inner .left .list .form-send input {
+        font-size: 1.1rem;
+        width: 8vw;
+        height: 6vw;
+    }
+
+    footer {
+        height: 50vh;
+    }
+
+    footer .inner .top {
+        display: none;
+    }
+
+    footer .inner .bottom p {
+        font-size: 1rem;
+    }
+}
+@media screen and (max-width:400px) {
+    header .inner{
+        width: 90%;
+    }
+    header .inner .logo{
+        width: 60%;
+    }
+    header .inner .menu{
+        width: 30px;
+    }
+    .submenu .close{
+        left: 80%;
+        width: 50px;
+    }
+    .submenu ul{
+        font-size: 2rem;
+    }
+    .three h2 {
+        font-size: 1.8rem;
+    }
+
+    .three .inner .left {
+        width: 90%;
+    }
+
+    .three .inner .left h4 {
+        font-size: 1.4rem;
+    }
+
+    .three .inner .right {
+        display: none;
+    }
+
+    .three .inner .left .contact {
+        font-size: 1rem;
+        line-height: 1.2rem;
+    }
+
+    .three .inner .left .list .form-row {
+        font-size: 0.9rem;
+    }
+
+    .three .inner .left .list .form-row select {
+        font-size: 0.8rem;
+    }
+
+    .three .inner .left .list .form-row input {
+        font-size: 0.8rem;
+    }
+
+    .three .inner .left .list .form-row textarea {
+        font-size: 0.8rem;
+    }
+
+    .three .inner .left .list .agree {
+        display: none;
+    }
+
+    .three .inner .left .list .form-send input {
+        font-size: 1rem;
+        width: 9vw;
+        height: 6vw;
+    }
+
+    footer {
+        height: 40vh;
+    }
+
+    footer .inner {
+        width: 100vw;
+    }
+
+    footer .inner .top {
+        display: none;
+    }
+
+    footer .inner .bottom p {
+        font-size: 0.8rem;
+        line-height: 1.1rem;
+    }
+}
